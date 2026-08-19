@@ -1,0 +1,38 @@
+:root {
+  /* color — apothecary-clinical botanical palette (kept from v1 build) */
+  --ink: #22261f;
+  --ink-soft: #4b5145;
+  --base: #eef0e8;
+  --paper: #fafaf6;
+  --moss: #3f5a44;
+  --moss-deep: #26362a;
+  --clay: #b97a5d;
+  --brass: #a98849;
+  --brass-line: rgba(169, 136, 73, 0.35);
+  --line: rgba(34, 38, 31, 0.12);
+
+  /* type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+
+  /* layout */
+  --container: min(1400px, 92vw);
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
