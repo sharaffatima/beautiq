@@ -1,0 +1,11 @@
+{
+  "installCommand": "cd Beautique && npm install",
+  "buildCommand": "cd Beautique && npm run build",
+  "outputDirectory": "Beautique/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
