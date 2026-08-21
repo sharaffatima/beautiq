@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FaBars, FaXmark, FaCalendarCheck } from 'react-icons/fa6';
+import { FaBars, FaCalendarCheck, FaXmark } from 'react-icons/fa6';
+import { siteInfo } from '../data/content';
 import { useScrollHidden } from '../hooks/useScrollDirection';
 import { useLanguage } from '../i18n/LanguageContext';
-import { siteInfo } from '../data/content';
 import './Navbar.css';
 
 export default function Navbar() {
