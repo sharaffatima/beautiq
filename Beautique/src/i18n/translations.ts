@@ -77,10 +77,10 @@ export const translations: Record<Language, Translation> = {
       closeMenu: 'Menü schließen',
     },
     hero: {
-      eyebrow: 'Kosmetikstudio · Wassenberg-Myhl',
+      eyebrow: 'Kosmetikstudio · Wassenberg',
       titleLine1: 'Gepflegte Haut,',
       titleEm: 'ganz in Ruhe.',
-      sub: 'BeautiQ verbindet dermatologisch durchdachte Behandlungen mit naturnahen Pflegeprodukten — in einem kleinen, ruhigen Studio nahe der niederländischen Grenze.',
+      sub: 'Beautique verbindet dermatologisch durchdachte Behandlungen mit naturnahen Pflegeprodukten — in einem kleinen, ruhigen Studio nahe der niederländischen Grenze.',
       ctaPrimary: 'Termin anfragen',
       ctaGhost: 'Leistungen entdecken',
     },
@@ -88,18 +88,18 @@ export const translations: Record<Language, Translation> = {
       eyebrow: 'Über uns',
       heading: 'Ein Studio, das sich Zeit nimmt',
       paragraphs: [
-        'BeautiQ Kosmetikstudio wurde in Wassenberg-Myhl mit einer einfachen Idee eröffnet: Hautpflege sollte nicht hastig sein. In unseren Behandlungsräumen kombinieren wir klassische kosmetische Verfahren mit einer sorgfältig ausgewählten Produktlinie — ohne überflüssige Schritte, ohne Zeitdruck.',
+        'Beautique Kosmetikstudio wurde in Wassenberg mit einer einfachen Idee eröffnet: Hautpflege sollte nicht hastig sein. In unseren Behandlungsräumen kombinieren wir klassische kosmetische Verfahren mit einer sorgfältig ausgewählten Produktlinie — ohne überflüssige Schritte, ohne Zeitdruck.',
         'Jede Behandlung beginnt mit einer kurzen Hautanalyse, damit Pflege und Produkt tatsächlich zum jeweiligen Hauttyp passen. Unser Team arbeitet bewusst mit einer begrenzten Zahl an Terminen pro Tag, um jedem Gast die nötige Ruhe zu geben.',
       ],
       facts: [
         'Di–Sa, nach Terminvereinbarung',
         'Naturnahe, hautschonende Produkte',
-        'Wassenberg-Myhl, direkt an der Brabanter Straße',
+        'Wassenberg',
       ],
     },
     features: {
       eyebrow: 'Leistungen',
-      heading: 'Warum BeautiQ',
+      heading: 'Warum Beautique',
       sub: 'Vier Grundsätze, an denen sich jede Behandlung bei uns orientiert.',
       items: [
         {
@@ -132,9 +132,9 @@ export const translations: Record<Language, Translation> = {
       eyebrow: 'Unser Standort',
       heading: 'Direkt an der Brabanter Straße',
       paragraph:
-        'Das Studio liegt in Wassenberg-Myhl, gut erreichbar mit dem Auto und mit kostenfreien Parkplätzen direkt vor der Tür.',
+        'Das Studio liegt in Wassenberg, gut erreichbar mit dem Auto und mit kostenfreien Parkplätzen direkt vor der Tür.',
       hours: ['Di–Fr 9:30–18:00 Uhr', 'Sa 9:30–14:00 Uhr'],
-      mapTitle: 'BeautiQ Kosmetikstudio auf der Karte',
+      mapTitle: 'Beautique Kosmetikstudio auf der Karte',
     },
     contact: {
       eyebrow: 'Kontakt',
@@ -148,14 +148,14 @@ export const translations: Record<Language, Translation> = {
     },
     welcome: {
       headingPre: 'Wir freuen uns, Sie',
-      headingEm: 'bei BeautiQ',
+      headingEm: 'bei Beautique',
       paragraph:
         'Ob erste Beratung oder Stammtermin — nehmen Sie sich die Zeit für Ihre Haut. Schreiben Sie uns kurz auf WhatsApp, wir melden uns persönlich zurück.',
       cta: 'Jetzt Kontakt aufnehmen',
     },
     footer: {
       disclaimer: (year) =>
-        `© ${year} BeautiQ Kosmetikstudio. Alle Angaben sind fiktiv und dienen ausschließlich Übungszwecken.`,
+        `© ${year} Beautique Kosmetikstudio. Alle Angaben sind fiktiv und dienen ausschließlich Übungszwecken.`,
     },
   },
 
@@ -170,10 +170,10 @@ export const translations: Record<Language, Translation> = {
       closeMenu: 'Close menu',
     },
     hero: {
-      eyebrow: 'Beauty Studio · Wassenberg-Myhl',
+      eyebrow: 'Beauty Studio · Wassenberg',
       titleLine1: 'Well-cared skin,',
       titleEm: 'at your own pace.',
-      sub: 'BeautiQ pairs dermatologically thoughtful treatments with nature-based skincare — in a small, calm studio close to the Dutch border.',
+      sub: 'Beautique pairs dermatologically thoughtful treatments with nature-based skincare — in a small, calm studio close to the Dutch border.',
       ctaPrimary: 'Book an appointment',
       ctaGhost: 'Explore our services',
     },
@@ -181,18 +181,18 @@ export const translations: Record<Language, Translation> = {
       eyebrow: 'About Us',
       heading: 'A studio that takes its time',
       paragraphs: [
-        'BeautiQ Kosmetikstudio opened in Wassenberg-Myhl on a simple idea: skincare shouldn\u2019t be rushed. In our treatment rooms we combine classic beauty techniques with a carefully chosen product line — no unnecessary steps, no time pressure.',
+        'Beautique Kosmetikstudio opened in Wassenberg on a simple idea: skincare shouldn\u2019t be rushed. In our treatment rooms we combine classic beauty techniques with a carefully chosen product line — no unnecessary steps, no time pressure.',
         'Every treatment starts with a short skin analysis, so the care and products actually match your skin type. Our team deliberately keeps a limited number of appointments per day, so every guest gets the calm they came for.',
       ],
       facts: [
         'Tue–Sat, by appointment',
         'Nature-based, skin-friendly products',
-        'Wassenberg-Myhl, right on Brabanter Straße',
+        'Wassenberg',
       ],
     },
     features: {
       eyebrow: 'Services',
-      heading: 'Why BeautiQ',
+      heading: 'Why Beautique',
       sub: 'Four principles that guide every treatment we offer.',
       items: [
         {
@@ -225,9 +225,9 @@ export const translations: Record<Language, Translation> = {
       eyebrow: 'Our Location',
       heading: 'Right on Brabanter Straße',
       paragraph:
-        'The studio is located in Wassenberg-Myhl, easy to reach by car with free parking right outside the door.',
+        'The studio is located in Wassenberg, easy to reach by car with free parking right outside the door.',
       hours: ['Tue–Fri 9:30 AM–6:00 PM', 'Sat 9:30 AM–2:00 PM'],
-      mapTitle: 'BeautiQ Kosmetikstudio on the map',
+      mapTitle: 'Beautique Kosmetikstudio on the map',
     },
     contact: {
       eyebrow: 'Contact',
@@ -241,14 +241,14 @@ export const translations: Record<Language, Translation> = {
     },
     welcome: {
       headingPre: 'We\u2019d love to welcome you',
-      headingEm: 'at BeautiQ',
+      headingEm: 'at Beautique',
       paragraph:
         'Whether it\u2019s a first consultation or a regular appointment — take the time for your skin. Send us a quick message on WhatsApp and we\u2019ll get back to you personally.',
       cta: 'Get in touch now',
     },
     footer: {
       disclaimer: (year) =>
-        `© ${year} BeautiQ Kosmetikstudio. All details are fictional and for practice purposes only.`,
+        `© ${year} Beautique Kosmetikstudio. All details are fictional and for practice purposes only.`,
     },
   },
 };

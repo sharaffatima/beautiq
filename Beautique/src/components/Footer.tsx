@@ -1,5 +1,4 @@
 import { FaFacebookF, FaInstagram, FaLocationDot, FaPhone, FaTiktok, FaWhatsapp } from 'react-icons/fa6';
-import logo from '../assets/logo.png';
 import { siteInfo } from '../data/content';
 import { useLanguage } from '../i18n/LanguageContext';
 import './Footer.css';
@@ -12,7 +11,6 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="site-footer__top">
         <div className="site-footer__brand">
-          <img className="site-footer__logo" src={logo} alt={siteInfo.name} />
           <span>{siteInfo.name}</span>
         </div>
 
@@ -26,16 +24,16 @@ export default function Footer() {
         </ul>
 
         <div className="site-footer__social">
-          <a href={siteInfo.whatsappHref} target="_blank" rel="noopener noreferrer" aria-label="BeautiQ per WhatsApp">
+          <a href={siteInfo.whatsappHref} target="_blank" rel="noopener noreferrer" aria-label="Beautique per WhatsApp">
             <FaWhatsapp aria-hidden="true" />
           </a>
-          <a href={siteInfo.instagramHref} target="_blank" rel="noopener noreferrer" aria-label="BeautiQ auf Instagram">
+          <a href={siteInfo.instagramHref} target="_blank" rel="noopener noreferrer" aria-label="Beautique auf Instagram">
             <FaInstagram aria-hidden="true" />
           </a>
-          <a href="#" aria-label="BeautiQ auf Facebook">
+          <a href="#" aria-label="Beautique auf Facebook">
             <FaFacebookF aria-hidden="true" />
           </a>
-          <a href="#" aria-label="BeautiQ auf TikTok">
+          <a href="#" aria-label="Beautique auf TikTok">
             <FaTiktok aria-hidden="true" />
           </a>
         </div>

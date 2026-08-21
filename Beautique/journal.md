@@ -1,10 +1,10 @@
-# Journal — BeautiQ Cosmetic Studio
+# Journal — Beautique Cosmetic Studio
 
 ## Session 1 — 2026-08-19
 
 **Judge:** Scope confirmed with user before build: static HTML/CSS/JS only,
 6 sections, no cart buttons, dummy contact data, address fixed to
-"BeautiQ Kosmetikstudio, Brabanter Str. 45, 41849 Wassenberg-Myhl,
+"Beautique Kosmetikstudio, Wassenberg,
 Germany". Flagged to user that 3 of 4 requested "skills"
 (UI/UX PRO MAX, SUPERPOWERS PROTOCOL, CONTEXT7) don't exist in the actual
 catalog, and that `/start-session` / `/end-session` are informal
@@ -94,7 +94,7 @@ Helmet, 8 sections including Features/Our Location/social-only Contact/
 closing Welcome section) as if it had already been built. Corrected the
 record first — v1 was HTML/CSS/JS with 6 sections, none of the new spec
 existed yet — then confirmed with the user this should replace/rebuild
-BeautiQ rather than start an unrelated project.
+Beautique rather than start an unrelated project.
 
 **Frontend Developer:** Scaffolded a separate project at
 `../beautiq-react` (Vite + React 19 + TypeScript). Kept the v1 design

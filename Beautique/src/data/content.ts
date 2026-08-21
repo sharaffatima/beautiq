@@ -11,16 +11,16 @@ export interface ContactCard {
 }
 
 export const siteInfo = {
-  name: 'BeautiQ Kosmetikstudio',
-  shortName: 'BeautiQ',
-  addressLines: ['Brabanter Str. 45', '41849 Wassenberg-Myhl', 'Deutschland'],
-  phoneDisplay: '+49 171 4094407',
-  phoneHref: '+491714094407',
-  whatsappHref: 'https://wa.me/+491714094407',
-  instagramHandle: '@beautiqkosmetik',
-  instagramHref: 'https://www.instagram.com/beautiqkosmetik?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==',
+  name: 'Beautique Kosmetikstudio',
+  shortName: 'Beautique',
+  addressLines: ['Wassenberg', 'Deutschland'],
+  phoneDisplay: '+49 1234 567890',
+  phoneHref: '+491234567890',
+  whatsappHref: 'https://wa.me/+491234567890',
+  instagramHandle: '@beautique',
+  instagramHref: 'https://www.instagram.com/beautiquekosmetik?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==',
   mapEmbedSrc:
-    'https://www.google.com/maps?q=Brabanter+Str.+45,+41849+Wassenberg-Myhl,+Germany&output=embed',
+    'https://www.google.com/maps?q=Wassenberg,+Germany&output=embed',
 };
 
 export const contactCards: ContactCard[] = [

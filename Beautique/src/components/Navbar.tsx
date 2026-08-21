@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FaBars, FaXmark, FaCalendarCheck } from 'react-icons/fa6';
 import { useScrollHidden } from '../hooks/useScrollDirection';
 import { useLanguage } from '../i18n/LanguageContext';
-import logo from '../assets/logo.png';
 import { siteInfo } from '../data/content';
 import './Navbar.css';
 
@@ -23,7 +22,6 @@ export default function Navbar() {
   return (
     <header className={`nav-island${hidden ? ' is-hidden' : ''}`}>
       <a href="#top" className="nav-mark" onClick={closeMenu}>
-        <img className="nav-mark__logo" src={logo} alt={siteInfo.name} />
         <span className="nav-mark__text">{siteInfo.shortName}</span>
       </a>
 

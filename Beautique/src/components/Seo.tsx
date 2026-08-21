@@ -6,15 +6,15 @@ export default function Seo() {
 
   const copy = {
     de: {
-      title: 'BeautiQ Kosmetikstudio — Wassenberg-Myhl',
+      title: 'Beautique Kosmetikstudio — Wassenberg',
       description:
-        'BeautiQ Kosmetikstudio in Wassenberg-Myhl: individuelle Gesichtsbehandlungen und naturnahe Hautpflege. Termine per WhatsApp oder Telefon.',
+        'Beautique Kosmetikstudio in Wassenberg: individuelle Gesichtsbehandlungen und naturnahe Hautpflege. Termine per WhatsApp oder Telefon.',
       locale: 'de_DE',
     },
     en: {
-      title: 'BeautiQ Kosmetikstudio — Wassenberg-Myhl',
+      title: 'Beautique Kosmetikstudio — Wassenberg',
       description:
-        'BeautiQ Kosmetikstudio in Wassenberg-Myhl: individual facial treatments and nature-based skincare. Book via WhatsApp or phone.',
+        'Beautique Kosmetikstudio in Wassenberg: individual facial treatments and nature-based skincare. Book via WhatsApp or phone.',
       locale: 'en_US',
     },
   } as const;
