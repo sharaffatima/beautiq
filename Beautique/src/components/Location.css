@@ -8,7 +8,7 @@
 }
 
 .location h2 {
-  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-size: clamp(2rem, 3.8vw, 3rem);
 }
 
 .location__list {
@@ -23,20 +23,20 @@
   align-items: flex-start;
 }
 .location__list svg {
-  color: var(--brass);
+  color: var(--gold);
   width: 1.2em;
   margin-top: 0.3em;
   flex-shrink: 0;
 }
 .location__list span {
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .location__map {
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid var(--brass-line);
+  border: 1px solid var(--gold-line);
   aspect-ratio: 4 / 3;
 }
 .location__map iframe {

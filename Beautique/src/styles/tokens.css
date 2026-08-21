@@ -1,15 +1,22 @@
 :root {
-  /* color — apothecary-clinical botanical palette (kept from v1 build) */
-  --ink: #22261f;
-  --ink-soft: #4b5145;
-  --base: #eef0e8;
-  --paper: #fafaf6;
+  /* color — retuned to match the studio's real logo (muted gold/taupe on
+     warm off-white), replacing the earlier more saturated "brass" tone.
+     --gold-deep is used anywhere gold sits on top of a light background
+     (buttons, labels, small text) so it clears WCAG AA contrast; the
+     lighter --gold is for decorative use only (icons, thin borders,
+     dividers) or for gold-on-dark contexts. */
+  --ink: #262420;
+  --ink-soft: #4b4a43;
+  --base: #f3f1ec;
+  --paper: #ffffff;
   --moss: #3f5a44;
   --moss-deep: #26362a;
+  --gold: #8a7355;
+  --gold-deep: #6b5a3e;
+  --gold-soft: #cdbb9a;
+  --gold-line: rgba(138, 115, 85, 0.35);
   --clay: #b97a5d;
-  --brass: #a98849;
-  --brass-line: rgba(169, 136, 73, 0.35);
-  --line: rgba(34, 38, 31, 0.12);
+  --line: rgba(38, 36, 32, 0.12);
 
   /* type */
   --font-display: 'Fraunces', Georgia, serif;

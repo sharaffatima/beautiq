@@ -1,7 +1,12 @@
 import { FaMortarPestle, FaClock, FaHandSparkles, FaLocationDot } from 'react-icons/fa6';
+import { useLanguage } from '../i18n/LanguageContext';
 import './About.css';
 
+const factIcons = [FaClock, FaHandSparkles, FaLocationDot];
+
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section className="about" id="about">
       <div className="about__media">
@@ -13,34 +18,21 @@ export default function About() {
       </div>
       <div className="about__content">
         <p className="eyebrow">
-          <FaMortarPestle aria-hidden="true" /> Über uns
+          <FaMortarPestle aria-hidden="true" /> {t.about.eyebrow}
         </p>
-        <h2>Ein Studio, das sich Zeit nimmt</h2>
-        <p>
-          Beautiq Kosmetikstudio wurde in Wassenberg-Myhl mit einer
-          einfachen Idee eröffnet: Hautpflege sollte nicht hastig sein. In
-          unseren Behandlungsräumen kombinieren wir klassische kosmetische
-          Verfahren mit einer sorgfältig ausgewählten Produktlinie — ohne
-          überflüssige Schritte, ohne Zeitdruck.
-        </p>
-        <p>
-          Jede Behandlung beginnt mit einer kurzen Hautanalyse, damit Pflege
-          und Produkt tatsächlich zum jeweiligen Hauttyp passen. Unser Team
-          arbeitet bewusst mit einer begrenzten Zahl an Terminen pro Tag, um
-          jedem Gast die nötige Ruhe zu geben.
-        </p>
+        <h2>{t.about.heading}</h2>
+        {t.about.paragraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
         <ul className="about__facts">
-          <li>
-            <FaClock aria-hidden="true" /> Di–Sa, nach Terminvereinbarung
-          </li>
-          <li>
-            <FaHandSparkles aria-hidden="true" /> Naturnahe, hautschonende
-            Produkte
-          </li>
-          <li>
-            <FaLocationDot aria-hidden="true" /> Wassenberg-Myhl, direkt an
-            der Brabanter Straße
-          </li>
+          {t.about.facts.map((fact, i) => {
+            const Icon = factIcons[i] ?? FaClock;
+            return (
+              <li key={fact}>
+                <Icon aria-hidden="true" /> {fact}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

@@ -1,10 +1,10 @@
-# Journal — Beautiq Cosmetic Studio
+# Journal — BeautiQ Cosmetic Studio
 
 ## Session 1 — 2026-08-19
 
 **Judge:** Scope confirmed with user before build: static HTML/CSS/JS only,
 6 sections, no cart buttons, dummy contact data, address fixed to
-"Beautiq Kosmetikstudio, Brabanter Str. 45, 41849 Wassenberg-Myhl,
+"BeautiQ Kosmetikstudio, Brabanter Str. 45, 41849 Wassenberg-Myhl,
 Germany". Flagged to user that 3 of 4 requested "skills"
 (UI/UX PRO MAX, SUPERPOWERS PROTOCOL, CONTEXT7) don't exist in the actual
 catalog, and that `/start-session` / `/end-session` are informal
@@ -18,6 +18,7 @@ specimen-label product cards, receding capsule navbar as signature
 interaction). Sourced 8 free Pexels photos (hero, about, 6 products).
 
 **E2E Tester — responsive checklist for this build:**
+
 - [ ] 360×640 (small mobile) — nav collapses, hero text doesn't overflow, product grid is 1-column
 - [ ] 390×844 / 430×932 (modern iPhones) — same as above, safe-area not clipped
 - [ ] 768×1024 (iPad portrait) — product grid 2-column, nav island still centered and readable
@@ -30,6 +31,7 @@ interaction). Sourced 8 free Pexels photos (hero, about, 6 products).
 - [ ] Keyboard: nav links, and any interactive contact form fields, have visible focus states
 
 **Frontend Developer — build complete:**
+
 - `index.html` (285 lines) — semantic sections in the required order, all 6
   sections present, no cart/order buttons on product cards, contact form
   is `preventDefault()`-only (no network call), German copy throughout
@@ -47,8 +49,9 @@ interaction). Sourced 8 free Pexels photos (hero, about, 6 products).
   clean (0 mismatches).
 
 **E2E Tester — checklist walk-through against the shipped CSS:**
+
 - 360–430px: `@media (max-width: 430px)` pins the island to `left/right:
-  1rem` (no more centering math at tiny widths), hero/about/contact
+1rem` (no more centering math at tiny widths), hero/about/contact
   collapse to 1 column via the ≤860px query. ✅
 - 768–1023px (tablet): ≤860px query switches nav to hamburger + dropdown;
   product grid auto-fits to 2 columns at this width given the 280px card
@@ -91,7 +94,7 @@ Helmet, 8 sections including Features/Our Location/social-only Contact/
 closing Welcome section) as if it had already been built. Corrected the
 record first — v1 was HTML/CSS/JS with 6 sections, none of the new spec
 existed yet — then confirmed with the user this should replace/rebuild
-Beautiq rather than start an unrelated project.
+BeautiQ rather than start an unrelated project.
 
 **Frontend Developer:** Scaffolded a separate project at
 `../beautiq-react` (Vite + React 19 + TypeScript). Kept the v1 design

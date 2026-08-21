@@ -18,7 +18,7 @@
   align-items: flex-start;
   gap: 0.3rem;
   background: var(--paper);
-  border: 1px solid var(--brass-line);
+  border: 1px solid var(--gold-line);
   border-radius: var(--radius-md);
   padding: 1.8rem 1.6rem;
   transition:
@@ -50,15 +50,15 @@
 
 .contact-card__label {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--gold-deep);
 }
 
 .contact-card__value {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--ink);
 }
 

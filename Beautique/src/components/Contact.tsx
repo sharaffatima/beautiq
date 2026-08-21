@@ -1,31 +1,32 @@
 import { FaWhatsapp, FaInstagram, FaPhone, FaEnvelopeOpenText, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import type { IconType } from 'react-icons';
-import { contactCards, type ContactCard } from '../data/content';
+import { contactCards } from '../data/content';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Contact.css';
 
-const iconMap: Record<ContactCard['type'], IconType> = {
+const iconMap: Record<(typeof contactCards)[number]['type'], IconType> = {
   whatsapp: FaWhatsapp,
   instagram: FaInstagram,
   call: FaPhone,
 };
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section className="contact" id="contact">
       <div className="section-head">
         <p className="eyebrow">
-          <FaEnvelopeOpenText aria-hidden="true" /> Kontakt
+          <FaEnvelopeOpenText aria-hidden="true" /> {t.contact.eyebrow}
         </p>
-        <h2>Schreiben oder rufen Sie uns an</h2>
-        <p className="section-head__sub">
-          Kein Kontaktformular nötig — wählen Sie einfach den Weg, der Ihnen
-          am liebsten ist.
-        </p>
+        <h2>{t.contact.heading}</h2>
+        <p className="section-head__sub">{t.contact.sub}</p>
       </div>
 
       <div className="contact-grid">
-        {contactCards.map((card) => {
+        {contactCards.map((card, i) => {
           const Icon = iconMap[card.type];
+          const label = t.contact.cards[i]?.label ?? card.type;
           return (
             <a
               className={`contact-card contact-card--${card.type}`}
@@ -37,7 +38,7 @@ export default function Contact() {
               <span className="contact-card__icon">
                 <Icon aria-hidden="true" />
               </span>
-              <span className="contact-card__label">{card.label}</span>
+              <span className="contact-card__label">{label}</span>
               <span className="contact-card__value">{card.value}</span>
               <FaArrowUpRightFromSquare className="contact-card__arrow" aria-hidden="true" />
             </a>

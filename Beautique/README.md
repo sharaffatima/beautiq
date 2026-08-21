@@ -1,13 +1,27 @@
-# Beautiq Kosmetikstudio
+# BeautiQ Kosmetikstudio — React rebuild
+
+React + TypeScript rebuild of the BeautiQ landing page (v1 was plain
+HTML/CSS/JS — see the project's earlier `CLAUDE.md` for that version).
 
 ## Stack
 
 - React 19 + TypeScript, scaffolded with Vite
 - `react-helmet-async` for SEO `<title>`/meta tags (see note below)
 - `react-icons` (Fa6 set) for all icons — no emojis
-- Plain CSS with custom properties (no CSS framework)
+- Plain CSS with custom properties (no CSS framework) — same design tokens
+  as the v1 build for brand consistency
 
-## Sections
+## About the "React Helmet" choice
+
+You asked for React Helmet by name. The original `react-helmet` package is
+unmaintained and has known issues under React 18/19 with `<StrictMode>` and
+concurrent rendering. I used **react-helmet-async** instead — it's the
+actively maintained fork with the same API (`<Helmet>` component), just
+safer for a current React version. Swapping back to classic `react-helmet`
+is a one-line change in `src/main.tsx` and `src/components/Seo.tsx` if you
+specifically need the original package.
+
+## Sections (in the order you specified)
 
 1. Navbar — floating island, hides on scroll-down / reveals on scroll-up
 2. Hero
@@ -17,6 +31,9 @@
 6. Contact Us — **no form**, three link-cards: WhatsApp, Instagram, Call
 7. Closing welcoming section
 8. Footer
+
+No backend, no database, no API routes — pure client-side landing page,
+same as before.
 
 ## Run it
 

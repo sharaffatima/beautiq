@@ -1,19 +1,19 @@
 import { FaLocationDot, FaClock, FaSignsPost } from 'react-icons/fa6';
 import { siteInfo } from '../data/content';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Location.css';
 
 export default function Location() {
+  const { t } = useLanguage();
+
   return (
     <section className="location" id="location">
       <div className="location__info">
         <p className="eyebrow">
-          <FaLocationDot aria-hidden="true" /> Unser Standort
+          <FaLocationDot aria-hidden="true" /> {t.location.eyebrow}
         </p>
-        <h2>Direkt an der Brabanter Straße</h2>
-        <p>
-          Das Studio liegt in Wassenberg-Myhl, gut erreichbar mit dem Auto
-          und mit kostenfreien Parkplätzen direkt vor der Tür.
-        </p>
+        <h2>{t.location.heading}</h2>
+        <p>{t.location.paragraph}</p>
 
         <ul className="location__list">
           <li>
@@ -30,7 +30,7 @@ export default function Location() {
           <li>
             <FaClock aria-hidden="true" />
             <span>
-              {siteInfo.hours.map((line) => (
+              {t.location.hours.map((line) => (
                 <span key={line}>
                   {line}
                   <br />
@@ -43,7 +43,7 @@ export default function Location() {
 
       <div className="location__map">
         <iframe
-          title="Beautiq Kosmetikstudio auf der Karte"
+          title={t.location.mapTitle}
           src={siteInfo.mapEmbedSrc}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
